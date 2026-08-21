@@ -67,6 +67,6 @@ def train(
 
 
 if __name__ == "__main__":
-    with open("params.yaml") as f:
+    with open("params.yaml", encoding="utf-8") as f:
         params = yaml.safe_load(f)
     train(params)

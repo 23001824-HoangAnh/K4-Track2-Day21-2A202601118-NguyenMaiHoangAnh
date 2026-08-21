@@ -3,6 +3,7 @@ name: Income Model CI/CD
 on:
   push:
     branches: [main]
+    # Retrain when data, source, parameters, or this workflow changes.
     paths:
       - 'data/**/*.dvc'
       - 'src/**/*.py'
